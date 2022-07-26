@@ -4,19 +4,20 @@
 <meta charset="UTF-8">
 <title>코스 등록</title>
 <link rel="stylesheet" href="../../assets/css/courses.css">
+<link rel="stylesheet" href="../../assets/css/course_write.css">
 </head>
 <body>
-<div class="wrap">
+<div id="wrap">
 	
 	<!-- 헤더 -->
 
 	<!-- 타이틀 -->
 	<div>
-		<h1 class="title">코스 등록하기</h1>
+		<h1 id="title">코스 등록하기</h1>
 	</div>
 	
 	<!-- 본문 -->
-	<div class="content">
+	<div id="content">
 	
 		<!-- 코스 지정 -->
 		<div class="course-form">
@@ -24,7 +25,7 @@
 			
 				<colgroup>
 					<col width="150px">
-					<col>
+					<col width="100%">
 				</colgroup>
 				
 				<tr>
@@ -32,9 +33,11 @@
 				</tr>
 				<tr>
 					<td>
-						<p>주소를 검색하면 아래에 지도가 표시됩니다.</p>
-						<input type="text">
-						<button type="button">주소검색</button>
+						<p class="guide">주소를 검색하면 아래에 지도가 표시됩니다.</p>
+						<form class="address-form">
+							<input type="text" name="address">
+							<button type="button" id="address-btn">주소검색</button>
+						</form>
 					</td>
 				</tr>
 				<tr>
@@ -56,13 +59,13 @@
 			
 				<colgroup>
 					<col width="150px">
-					<col>
+					<col width="100%">
 				</colgroup>
 				
 				<tbody>
 					<tr>
 						<th>코스 이름</th>
-						<td><input type="text"></td>
+						<td><input type="text" name="courseName"></td>
 					</tr>
 					<tr>
 						<th>종목</th>
@@ -186,7 +189,7 @@
 		</div>
 		<!-- course-info -->
 		
-		<div class="btn-wrap">
+		<div id="btn-wrap">
 			<button class="cancel">취소</button>
 			<button class="add">코스 등록</button>
 		</div>
