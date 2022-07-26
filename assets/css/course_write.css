@@ -13,7 +13,13 @@
 	text-align: center;
 }
 
+.course-form p {font-size: 15px;}
+
+
 /* 테이블 */
+.course-form table {
+	border-collapse: collapse;
+}
 .course-form table th {
 	height: 70px;
 	min-width: 150px;
@@ -22,15 +28,12 @@
 	background-color: rgb(249, 249, 249);
 	border-top: 1px solid rgb(204, 204, 204);
 	vertical-align: middle;
-	border-collapse: collapse;
 }
 .course-form table tr td {
 	padding: 12px 20px;
 	border-top: 1px solid rgb(204, 204, 204);
-	border-collapse: collapse;
 }
 
-.course-form p {font-size: 15px;}
 
 /* 텍스트박스 */
 .course-form input[type="text"] {
@@ -53,18 +56,19 @@
 	
 }
 
+/* 지도 (나중에 img를 지도로 바꿔야함!!!!) */
+.course-form table tr td>#map>img {
+	width: 376px;
+	height: 320px;
+}
 
+
+
+/* 버튼 */
 .course-form input[name="courseName"] {width: 100%;}
 .course-form ul>li {float: left;}
 .course-form label {margin: 0px 12px 0px 0px;}
-
-/* 버튼 리스트 */
-.course-radio input[type="radio"]:checked + p {
-	color: rgb(255,255,255);
-	border-color: rgb(50, 108, 249);
-	background-color: rgb(50, 108, 249);
-}
-.course-radio ul p {
+.course-radio .course-radio p, #btn-wrap>button {
 	text-align: center;
 	min-width: 82px;
 	line-height: 46px;
@@ -74,4 +78,18 @@
 	border-radius: 3px;
 	background-color: rgb(255,255,255);
 }
+.course-radio input[type="radio"]:checked + p, #btn-wrap>.add {
+	color: rgb(255,255,255);
+	border-color: rgb(50, 108, 249);
+	background-color: rgb(50, 108, 249);
+}
+#btn-wrap {text-align: center;}
+#btn-wrap>button {
+	width: 160px;
+	height: 50px;
+	font-size: 15px;
+	font-family: 나눔고딕, "맑은 고딕", 돋움, 굴림; /* 적용안되길래 일단 넣음 */
+}
+#btn-wrap>.add {margin: 0px 0px 0px 12px;}
+
 

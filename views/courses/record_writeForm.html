@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>기록 작성</title>
+<link rel="stylesheet" href="../../assets/css/courses.css">
+<link rel="stylesheet" href="../../assets/css/course_write.css">
 </head>
 <body>
 <div id="wrap">
@@ -22,105 +24,109 @@
 			<h1>코스 정보</h1>
 			
 			<table border="1">
+				<colgroup>
+					<col width="150px">
+					<col width="100%">
+					<col width="100%">
+				</colgroup>
+				
 				<tr>
 					<th rowspan="5">코스</th>
 					<td>
-						<p>코스 제목</p>
-						<input type="text" readonly>
+						<div>
+							<div>
+								<p>코스 제목</p>
+								<input type="text" readonly>
+							</div>
+							<div>
+								<p>종목</p>
+								<label class="course-radio">
+									<input type="radio" name="events" value="walk" checked>
+									<p>산책</p>
+								</label>
+								<!-- 
+								<label class="course-radio">
+									<input type="radio" name="events" value="jogging">
+									<p>조깅</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="events" value="running">
+									<p>러닝</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="events" value="marathon">
+									<p>마라톤</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="events" value="bike">
+									<p>자전거</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="events" value="draw">
+									<p>그림그리기</p>
+								</label>
+								 -->
+							 </div>
+	
+							<div>
+								<p>거리</p>
+								<div class="course-radio">
+									<input type="text" readonly>
+									
+									<label class="course-radio">
+										<input type="radio" name="distance" value="m" checked onclick="return false">
+										<p>m</p>
+									</label>
+									<label class="course-radio">
+										<input type="radio" name="distance" value="km" onclick="return false">
+										<p>km</p>
+									</label>
+								</div>
+							</div>
+	
+							<div>
+								<p>예상 시간</p>
+								<input type="text" readonly>
+								<p>시간</p>
+								<input type="text" readonly>
+								<p>분</p>
+							</div>
+	
+							<div>
+								<p>예상 난이도</p>
+								<div class="course-radio">
+									<ul class="">
+										<li>
+											<label class="course-radio">
+												<input type="radio" name="levels" value="easy" checked onclick="return false">
+												<p>쉬움</p>
+											</label>
+										</li>
+										<li>
+											<label class="course-radio">
+												<input type="radio" name="levels" value="normal" onclick="return false">
+												<p>보통</p>
+											</label>
+										</li>
+										<li>
+											<label class="course-radio">
+												<input type="radio" name="levels" value="hard" onclick="return false">
+												<p>어려움</p>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</td>
 					<td rowspan="5">
 						<!-- 지도 -->
-						<img src="../../assets/img/map.jpg" height="320px">
-					</td>
-				</tr>
-				
-				<tr>
-					<td>
-						<p>종목</p>
-						<label class="course-radio">
-							<input type="radio" name="events" value="walk" checked>
-							<p>산책</p>
-						</label>
-						<!-- 
-						<label class="course-radio">
-							<input type="radio" name="events" value="jogging">
-							<p>조깅</p>
-						</label>
-						<label class="course-radio">
-							<input type="radio" name="events" value="running">
-							<p>러닝</p>
-						</label>
-						<label class="course-radio">
-							<input type="radio" name="events" value="marathon">
-							<p>마라톤</p>
-						</label>
-						<label class="course-radio">
-							<input type="radio" name="events" value="bike">
-							<p>자전거</p>
-						</label>
-						<label class="course-radio">
-							<input type="radio" name="events" value="draw">
-							<p>그림그리기</p>
-						</label>
-						 -->
-					</td>
-				</tr>
-				
-				<tr>
-					<td>
-						<p>거리</p>
-						<div class="course-radio">
-							<input type="text" readonly>
-							
-							<label class="course-radio">
-								<input type="radio" name="distance" value="m" checked onclick="return false">
-								<p>m</p>
-							</label>
-							<label class="course-radio">
-								<input type="radio" name="distance" value="km" onclick="return false">
-								<p>km</p>
-							</label>
+						<div id="map">
+							<img src="../../assets/img/map.jpg">
 						</div>
 					</td>
 				</tr>
-				
-				<tr>
-					<td>
-						<p>예상 시간</p>
-						<input type="text" readonly>
-						<p>시간</p>
-						<input type="text" readonly>
-						<p>분</p>
-					</td>
-				</tr>
-				
-				<tr>
-					<td>
-						<p>예상 난이도</p>
-						<div class="course-radio">
-							<ul class="">
-								<li>
-									<label class="course-radio">
-										<input type="radio" name="levels" value="easy" checked onclick="return false">
-										<p>쉬움</p>
-									</label>
-								</li>
-								<li>
-									<label class="course-radio">
-										<input type="radio" name="levels" value="normal" onclick="return false">
-										<p>보통</p>
-									</label>
-								</li>
-								<li>
-									<label class="course-radio">
-										<input type="radio" name="levels" value="hard" onclick="return false">
-										<p>어려움</p>
-									</label>
-								</li>
-							</ul>
-						</div>
-					</td>
-				</tr>
+
 			</table>
 			
 		</div>
