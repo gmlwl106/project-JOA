@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>코스 등록</title>
+<link rel="stylesheet" href="../../assets/css/courses.css">
+</head>
+<body>
+<div class="wrap">
+	
+	<!-- 헤더 -->
+
+	<!-- 타이틀 -->
+	<div>
+		<h1 class="title">코스 등록하기</h1>
+	</div>
+	
+	<!-- 본문 -->
+	<div class="content">
+	
+		<!-- 코스 지정 -->
+		<div class="course-form">
+			<table>
+			
+				<colgroup>
+					<col width="150px">
+					<col>
+				</colgroup>
+				
+				<tr>
+					<th rowspan="3">코스 지정</th>
+				</tr>
+				<tr>
+					<td>
+						<p>주소를 검색하면 아래에 지도가 표시됩니다.</p>
+						<input type="text">
+						<button type="button">주소검색</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<!-- 지도 -->
+						<img src="../../assets/img/map.jpg" height="615">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- course-select -->
+		
+		<!-- 코스정보 -->
+		<div class="course-form">
+		
+			<h1>코스 정보</h1>
+			
+			<table>
+			
+				<colgroup>
+					<col width="150px">
+					<col>
+				</colgroup>
+				
+				<tbody>
+					<tr>
+						<th>코스 이름</th>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<th>종목</th>
+						<td>
+							<div class="course-radio">
+								<ul class="">
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="walk" checked>
+											<p>산책</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="jogging">
+											<p>조깅</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="running">
+											<p>러닝</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="marathon">
+											<p>마라톤</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="bike">
+											<p>자전거</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="events" value="draw">
+											<p>그림그리기</p>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>거리</th>
+						<td>
+							<div class="course-radio">
+								<input type="text">
+								
+								<label class="course-radio">
+									<input type="radio" name="distance" value="m" checked>
+									<p>m</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="distance" value="km">
+									<p>km</p>
+								</label>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>예상 시간</th>
+						<td>
+							<input type="text">
+							<p>시간</p>
+							<input type="text">
+							<p>분</p>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>예상 난이도</th>
+						<td>
+							<div class="course-radio">
+								<ul class="">
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="levels" value="easy" checked>
+											<p>쉬움</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="levels" value="normal">
+											<p>보통</p>
+										</label>
+									</li>
+									<li>
+										<label class="course-radio">
+											<input type="radio" name="levels" value="hard">
+											<p>어려움</p>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<th>코스 공개여부</th>
+						<td>
+							<div class="course-radio">
+								<label class="course-radio">
+									<input type="radio" name="open-status" value="open" checked>
+									<p>공개</p>
+								</label>
+								<label class="course-radio">
+									<input type="radio" name="open-status" value="close">
+									<p>비공개</p>
+								</label>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- course-info -->
+		
+		<div class="btn-wrap">
+			<button class="cancel">취소</button>
+			<button class="add">코스 등록</button>
+		</div>
+		
+	</div>
+	<!-- content -->
+	
+	
+	<!-- 푸터 -->
+	
+</div>
+<!-- wrap -->
+</body>
+</html>
