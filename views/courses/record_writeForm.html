@@ -23,7 +23,7 @@
 		
 			<h1>코스 정보</h1>
 			
-			<table border="1">
+			<table>
 				<colgroup>
 					<col width="150px">
 					<col width="100%">
@@ -33,91 +33,18 @@
 				<tr>
 					<th rowspan="5">코스</th>
 					<td>
-						<div>
+						<div class="course-info">
 							<div>
 								<p>코스 제목</p>
-								<input type="text" readonly>
+								<h2>우리집 지름길</h2>
 							</div>
+							
 							<div>
 								<p>종목</p>
-								<label class="course-radio">
-									<input type="radio" name="events" value="walk" checked>
-									<p>산책</p>
-								</label>
-								<!-- 
-								<label class="course-radio">
-									<input type="radio" name="events" value="jogging">
-									<p>조깅</p>
-								</label>
-								<label class="course-radio">
-									<input type="radio" name="events" value="running">
-									<p>러닝</p>
-								</label>
-								<label class="course-radio">
-									<input type="radio" name="events" value="marathon">
-									<p>마라톤</p>
-								</label>
-								<label class="course-radio">
-									<input type="radio" name="events" value="bike">
-									<p>자전거</p>
-								</label>
-								<label class="course-radio">
-									<input type="radio" name="events" value="draw">
-									<p>그림그리기</p>
-								</label>
-								 -->
-							 </div>
-	
-							<div>
-								<p>거리</p>
-								<div class="course-radio">
-									<input type="text" readonly>
-									
-									<label class="course-radio">
-										<input type="radio" name="distance" value="m" checked onclick="return false">
-										<p>m</p>
-									</label>
-									<label class="course-radio">
-										<input type="radio" name="distance" value="km" onclick="return false">
-										<p>km</p>
-									</label>
-								</div>
-							</div>
-	
-							<div>
-								<p>예상 시간</p>
-								<input type="text" readonly>
-								<p>시간</p>
-								<input type="text" readonly>
-								<p>분</p>
-							</div>
-	
-							<div>
-								<p>예상 난이도</p>
-								<div class="course-radio">
-									<ul class="">
-										<li>
-											<label class="course-radio">
-												<input type="radio" name="levels" value="easy" checked onclick="return false">
-												<p>쉬움</p>
-											</label>
-										</li>
-										<li>
-											<label class="course-radio">
-												<input type="radio" name="levels" value="normal" onclick="return false">
-												<p>보통</p>
-											</label>
-										</li>
-										<li>
-											<label class="course-radio">
-												<input type="radio" name="levels" value="hard" onclick="return false">
-												<p>어려움</p>
-											</label>
-										</li>
-									</ul>
-								</div>
+								<span>산책</span>
 							</div>
 						</div>
+						
 					</td>
 					<td rowspan="5">
 						<!-- 지도 -->
@@ -136,7 +63,15 @@
 		<div class="course-form">
 			<h1>기록 정보</h1>
 			
-			<table border="1">
+			<table>
+			
+				<colgroup>
+					<col width="150px">
+					<col width="80%">
+					<col width="150px">
+					<col width="100%">
+				</colgroup>
+				
 				<tr>
 					<th>날짜</th>
 					<td colspan="3">
@@ -156,25 +91,25 @@
 								</li>
 								<li>
 									<label class="course-radio">
-										<input type="radio" name="weather" value="moon" checked>
+										<input type="radio" name="weather" value="moon">
 										<p>밤</p>
 									</label>
 								</li>
 								<li>
 									<label class="course-radio">
-										<input type="radio" name="weather" value="cloud" checked>
+										<input type="radio" name="weather" value="cloud">
 										<p>흐린날</p>
 									</label>
 								</li>
 								<li>
 									<label class="course-radio">
-										<input type="radio" name="weather" value="rain" checked>
+										<input type="radio" name="weather" value="rain">
 										<p>비오는날</p>
 									</label>
 								</li>
 								<li>
 									<label class="course-radio">
-										<input type="radio" name="weather" value="snow" checked>
+										<input type="radio" name="weather" value="snow">
 										<p>눈오는날</p>
 									</label>
 								</li>
@@ -185,7 +120,7 @@
 					<th>기온</th>
 					<td>
 						<input type="text">
-						<p>℃</p>
+						<p><b>℃</b></p>
 					</td>
 				</tr>
 				
@@ -276,7 +211,7 @@
 				<tr>
 					<th>한줄평</th>
 					<td colspan="3">
-						<input type="text">
+						<input type="text" class="text-width">
 					</td>
 				</tr>
 				
